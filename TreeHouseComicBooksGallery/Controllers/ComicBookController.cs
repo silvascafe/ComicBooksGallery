@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace ComicBooksGallery.Controllers
+namespace TreeHouseComicBooksGallery.Controllers
 {
-    public class ComicBooksController: Controller
+    public class ComicBookController: Controller
     {
         public ActionResult Index()
         {
