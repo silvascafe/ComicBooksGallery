@@ -19,5 +19,15 @@ namespace TreeHouseComicBooksGallery.Models
 
         public Artist[] Artists { get; set; }
 
+        public string DisplayText => $"{SeriesTitle} # {IssueNumber}";
+
+        public string CoverImageFileName
+        {
+            get
+            {
+                return SeriesTitle.Replace(" ", "-")
+                           .ToLower() + "-" + IssueNumber + ".jpg";
+            }
+        }
     }
 }
