@@ -15,7 +15,7 @@ namespace TreeHouseComicBooksGallery.Models
 
         public int IssueNumber { get; set; }
 
-        public string Description { get; set; }
+        public string DescriptionHtml { get; set; }
 
         public Artist[] Artists { get; set; }
 
