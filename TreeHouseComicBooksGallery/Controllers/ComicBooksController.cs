@@ -28,9 +28,7 @@ namespace TreeHouseComicBooksGallery.Controllers
 
             var comicBook = _comicBookRepository.GetComicBook((int) id);
 
-            if (comicBook == null) return HttpNotFound();
-
-            return View(comicBook);
+            return comicBook == null ? (ActionResult) HttpNotFound() : View(comicBook);
         }
     }
 }
