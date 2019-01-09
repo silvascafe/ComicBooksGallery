@@ -102,14 +102,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Web.config" />
-    <Content Include="Views\ComicBook\Detail.cshtml" />
-    <Content Include="Views\ComicBook\Index.cshtml" />
+    <Content Include="Views\ComicBooks\Detail.cshtml" />
+    <Content Include="Views\ComicBooks\Index.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\ComicBookController.cs" />
+    <Compile Include="Controllers\ComicBooksController.cs" />
     <Compile Include="Data\ComicBookRepository.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
