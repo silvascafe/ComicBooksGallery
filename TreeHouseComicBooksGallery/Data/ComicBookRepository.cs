@@ -64,5 +64,10 @@ namespace TreeHouseComicBooksGallery.Data
         {
             return _comicBooks.FirstOrDefault(_ => _.Id == id);
         }
+
+        public ComicBook[] GetComicBooks()
+        {
+            return _comicBooks;
+        }
     }
 }
