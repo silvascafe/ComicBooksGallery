@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using System.Web.UI.WebControls
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -23,12 +24,19 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <!-- Add menu items here -->  
-       
                 </ul>                                                                             
             </div>
         </div>
     </div>
-
+    @if (ViewBag.ShowBackBar != null && ViewBag.ShowBackBar)
+    {
+        <div class="backbar">
+            <div class="container">
+                @Html.ActionLink("Return to list", "Index", "ComicBooks",
+                    new { area = "" }, new { @class = "btn btn-default"}) 
+            </div>
+        </div>
+    }
     <div class="container body-content">
         @RenderBody()
         <hr />
